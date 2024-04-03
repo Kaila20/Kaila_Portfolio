@@ -32,60 +32,6 @@ html{
 }
 
 
-/* ----- CHANING SCROLL BAR DESIGN ------ 
-::-webkit-scrollbar{
-    width: 10px;
-    border-radius: 25px;
-}
-
-::-webkit-scrollbar-track{
-    background: rgb(196, 191, 191);
-}
-
-::-webkit-scrollbar-thumb{
-    background: #ccc;
-    border-radius: 30px;
-}
-
-::-webkit-scrollbar-thumb:hover{
-    background:rgb(196, 191, 191) ;
-} */
-
-
-/*------ REUSABLE CSS ----- */
-
-
-
-
-/*--------- GLOBAL BUTTON DESIGN -------*/
- /*.btn{
-    font-weight: 500;
-    padding: 12px 20px;
-    background: white;
-    border: none;
-    border-radius: 10px;
-    cursor:pointer;
-    transition: .5s;
-}
-
-
-.btn>i{
-    margin-left: 10px;
-}
-
-
-.btn:hover{
-    background: var(--second-color);
-    color:var(--color-white);
-}
-*/
-
-/* ------ GLOBAL ICON DESIGN ------ */
-i{
-    font-size: 16px;
-}
-
-
 
 
 /* -------- BASE ---------- */
@@ -172,27 +118,9 @@ nav{
 
 
 /* HOME MENU ------ */
-.Home-Box{
-    position: relative;
-    display:flex;
-    height: 100vh;
-    min-height: 700px; /* May chnage to 800 */
-    
-}
-
-.Home-Text{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-    flex-direction: column;
-    width: 50%; /* Might chnage to 60%; */
-    padding-left: 20px;
-}
 
 
-/* HOME MENU: CHAT GBT
+/* HOME MENU: CHAT GBT */
 .Home-Box, .Home-Text {
     position: relative;
 }
@@ -211,7 +139,7 @@ nav{
     flex-direction: column;
     width: 50%; 
     padding-left: 20px;
-} */
+} 
 
 
 /*Wrap class (Towards the home/nav menu)*/
@@ -219,28 +147,7 @@ nav{
     padding-inline: 10vw; /* Tsting the headerShadow with this, using vh */
 }
 
-/*---- HOME ----- */
-/* REMOVE LATER */
-.Home-Box{
-    position: relative;
-    display:flex;
-    height: 100vh;
-    min-height: 700px;
-} 
 
-.Home-Text{
-    position:relative;
-    display:flex;
-    justify-content: center;
-    align-content:center;
-    min-height: center;
-    min-height: 80vh;
-    flex-direction: column;
-    width:50%;
-    padding-left: 20px;
-
-}
-/* ????? */
 
 
 
@@ -290,8 +197,7 @@ nav{
 
 /* Hover for button */
 .Home-Text-btn .btn-blue:hover{
-    background: #723544;
-    border: 2px solid #723544;
+    cursor: pointer;
 }
 
 /* Social me icons */
@@ -476,7 +382,7 @@ h3{
 
 .project-container{
     display:flex;
-    width:100%;
+    width:105%;
     justify-content: space-between;
     gap:20px;
     flex-wrap: wrap;
@@ -504,6 +410,13 @@ h3{
     font-size: 15px;
     color:#777;
 }
+
+.project-box {
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+    text-decoration: none; /* Remove default underline */
+    color: inherit; /* Inherit text color */
+}
+
 
 /* --- INFO BUTTON ---- */
 
@@ -544,7 +457,7 @@ h3{
 
 
 
-/* ---- FOOTER --- */
+
 /* ---- FOOTER --- */
 footer {
     display: flex;
@@ -735,7 +648,19 @@ footer {
         width: 260px;
         height: 260px;
     }
+        .container{
+            width:auto;
+            margin:0;
+            padding:0;
+        }
 
+        .Wrap {
+            width:auto;
+            margin:0;
+            padding:0;
+        }
+
+        
     
 }
 
@@ -812,29 +737,6 @@ footer {
 }
 
 
-.Projects-rectangle {
-    position: absolute;
-    top: 280px;
-    width: 100%;
-    left: 0; /* Adjust this value as needed */
-    z-index: -1; /* Ensure it's lower than the project boxes */
-}
-
-.Projects-rectangle-2 {
-    position: absolute;
-    top: 280px;
-    width: 100%;
-    left: 475px; /* Adjust this value as needed */
-    z-index: -1; /* Ensure it's lower than the project boxes */
-}
-
-.Projects-rectangle-3 {
-    position: absolute;
-    top: 280px;
-    width: 100%;
-    left: 725px; /* Adjust this value as needed */
-    z-index: -1; /* Ensure it's lower than the project boxes */
-}
 
 
 /* LEAF SOLOR ABOUT */
@@ -864,58 +766,10 @@ footer {
     position: relative;
 }
 
-.About-rectangle-start {
-    position: absolute;
-    top:200px; /* Position the rectangle at the bottom of the about section */
-    left: 45%; /* Position it horizontally at the center */
-    transform: translateX(-50%);
-    z-index: -2;
-    
-}
-
-.About-rectangle-start img {
-    width: 35%;
-    height: auto;
-}
 
 
-/* PROJECTS RECTANGLE IMG RESPONSIVE */
-@media only screen and (max-width: 768px) {
-    .Projects-rectangle {
-        width: 50px; /* Adjust width for smaller screens */
-        top:240px; /* Position the rectangle at the bottom of the about section */
-        left: 0%;
-    }
-
-    .Projects-rectangle-2{
-        top:560px;
-        left: 0%;
-    }
-
-    .Projects-rectangle-3{
-        top:830px;
-        left:0%;
-    }
-}
 
 
-@media only screen and (max-width: 890px){
-    .Projects-rectangle {
-        width: 50px; /* Adjust width for smaller screens */
-        top:240px; /* Position the rectangle at the bottom of the about section */
-        left: 0%;
-    }
-
-    .Projects-rectangle-2{
-        top:560px;
-        left: 0%;
-    }
-
-    .Projects-rectangle-3{
-        top:830px;
-        left:0%;
-    }
-}
 
 
 /* FIELD IMG PROJECT  PAGE  */
@@ -958,3 +812,22 @@ footer {
     }
 }
 
+
+@media screen and (max-width: 540px){
+    footer {
+        padding: 4px; /* Adjust padding for smaller screens */
+    }
+
+    .top-footer p {
+        font-size: 28px; /* Decrease font size for smaller screens */
+    }
+
+    .bottom-footer {
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+
+    .footer-social-icons{
+        
+        margin-top: 20px; 
+    }
+}
