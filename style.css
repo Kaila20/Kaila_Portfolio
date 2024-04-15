@@ -662,7 +662,7 @@ footer {
         /* Changing hamburger repsonsiive */
      .nav-menu-btn{
         position: relative; 
-        left: -90px; /* adjust this value as needed */
+        left: -70px; /* adjust this value as needed */
      }   
     
 }
