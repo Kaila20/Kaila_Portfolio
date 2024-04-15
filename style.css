@@ -120,7 +120,7 @@ nav{
 /* HOME MENU ------ */
 
 
-/* HOME MENU: CHAT GBT */
+/* HOME MENU */
 .Home-Box, .Home-Text {
     position: relative;
 }
@@ -553,6 +553,11 @@ footer {
     .nav-menu-btn {
         display: block;
       
+    }
+
+    .nav-lists{
+        position: relative;
+        left: -20px /* Chnage navlist in responsive view */
     }
 
     /* Trying to chnage the direction of the headshot, Test, and icons */
