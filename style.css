@@ -455,9 +455,6 @@ h3{
 
 
 
-
-
-
 /* ---- FOOTER --- */
 footer {
     display: flex;
@@ -486,7 +483,7 @@ footer {
     text-decoration: none;
     color: var(--text-color-second);
     font-weight: 500;
-    margin-inline: 20px;
+    /*margin-inline: 20px; */
 }
 
 /* FOOTER ICONS */
@@ -499,6 +496,7 @@ footer {
     font-size: 14px;
     margin-top: 10px;
 }
+
 
 
 
@@ -791,6 +789,7 @@ footer {
 .Leaf-Field-2 img {
     width: 100%;
     height: auto;
+    margin-bottom: -40px;
 }
 
 .Icons {
@@ -829,5 +828,39 @@ footer {
     .footer-social-icons{
         
         margin-top: 20px; 
+    }
+}
+
+
+
+@media screen and (max-width: 540px){
+
+}
+
+
+
+@media screen and (max-width: 768px){
+    .footer-social-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon {
+        margin-right: 0; /* Remove horizontal margin */
+        margin-bottom: 10px; /* Add vertical margin */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-social-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon {
+        margin-right: 0; /* Remove horizontal margin */
+        margin-bottom: 10px; /* Add vertical margin */
     }
 }
