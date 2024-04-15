@@ -552,6 +552,7 @@ footer {
 
     .nav-menu-btn {
         display: block;
+      
     }
 
     /* Trying to chnage the direction of the headshot, Test, and icons */
@@ -637,7 +638,7 @@ footer {
   
 }
 
-
+/* Home and humaburger responsive */
 @media only screen and (max-width: 1024px) {
     .Home-Text{
         padding:0;
@@ -658,7 +659,11 @@ footer {
             padding:0;
         }
 
-        
+        /* Changing hamburger repsonsiive */
+     .nav-menu-btn{
+        position: relative; 
+        left: -90px; /* adjust this value as needed */
+     }   
     
 }
 
@@ -833,9 +838,7 @@ footer {
 
 
 
-@media screen and (max-width: 540px){
 
-}
 
 
 
