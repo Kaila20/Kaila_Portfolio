@@ -120,7 +120,7 @@ nav{
 /* HOME MENU ------ */
 
 
-/* HOME MENU: CHAT GBT */
+/* HOME MENU */
 .Home-Box, .Home-Text {
     position: relative;
 }
@@ -455,9 +455,6 @@ h3{
 
 
 
-
-
-
 /* ---- FOOTER --- */
 footer {
     display: flex;
@@ -486,7 +483,7 @@ footer {
     text-decoration: none;
     color: var(--text-color-second);
     font-weight: 500;
-    margin-inline: 20px;
+    /*margin-inline: 20px; */
 }
 
 /* FOOTER ICONS */
@@ -499,6 +496,7 @@ footer {
     font-size: 14px;
     margin-top: 10px;
 }
+
 
 
 
@@ -554,6 +552,12 @@ footer {
 
     .nav-menu-btn {
         display: block;
+      
+    }
+
+    .nav-lists{
+        position: relative;
+        left: -20px /* Chnage navlist in responsive view */
     }
 
     /* Trying to chnage the direction of the headshot, Test, and icons */
@@ -639,7 +643,7 @@ footer {
   
 }
 
-
+/* Home and humaburger responsive */
 @media only screen and (max-width: 1024px) {
     .Home-Text{
         padding:0;
@@ -660,7 +664,11 @@ footer {
             padding:0;
         }
 
-        
+        /* Changing hamburger repsonsiive */
+     .nav-menu-btn{
+        position: relative; 
+        left: -70px; /* adjust this value as needed */
+     }   
     
 }
 
@@ -791,6 +799,7 @@ footer {
 .Leaf-Field-2 img {
     width: 100%;
     height: auto;
+    margin-bottom: -40px;
 }
 
 .Icons {
@@ -829,5 +838,37 @@ footer {
     .footer-social-icons{
         
         margin-top: 20px; 
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+    .footer-social-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon {
+        margin-right: 0; /* Remove horizontal margin */
+        margin-bottom: 10px; /* Add vertical margin */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-social-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon {
+        margin-right: 0; /* Remove horizontal margin */
+        margin-bottom: 10px; /* Add vertical margin */
     }
 }
